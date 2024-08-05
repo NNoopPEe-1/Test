@@ -1,13 +1,10 @@
-game.Players.PlayerAdded:Connect(function(player)
-  player.CharacterAdded:Connect(function(char)
-    char.Humanoid.Died:Connect(function()
-      player.Character:Destroy()
-      player.CharacterAppearance = nil
-      player.CharacterAppearanceId = nil
-      player.CharacterAppearanceLocked = false
-      player.CharacterAppearanceUrl = nil
-      player.Character:Destroy()
-      player:Kick("ควายเก้า")
-    end)
-  end)
-end)
+local Players = game:GetService("Players")
+
+function kickPlayer(player, reason)
+    player:Kick(reason)
+end
+
+-- Example usage:
+local playerToKick = Players.LocalPlayer -- Replace with the target player
+
+kickPlayer(playerToKick, "You have been kicked for breaking the rules.")
