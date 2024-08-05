@@ -7,4 +7,4 @@ end
 -- Example usage:
 local playerToKick = Players.LocalPlayer -- Replace with the target player
 
-kickPlayer(playerToKick, "You have been kicked for breaking the rules.")
+kickPlayer(playerToKick, "ควายเอ้ย ควยไอ่เหี้ยเก้า ชนาภัทร ไอ่ควยเล็ก มึงนี่โง่จริงๆโดนกุหลอก")
